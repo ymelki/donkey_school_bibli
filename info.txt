@@ -1,0 +1,27 @@
+creation d'un projet bibli
+creation d'un form creer livre post
+creation d'un form enregistrer livre vardump(post)
+pareil pour cat , edit, bibli ...
+creer page detail liste des livres en html 5 livres qui vont vers une page detail
+creer la boucle pour afficher 100 livres
+Creer le bouton supprimer comme pour detail
+Creer le bouton modifier
+bien montrer les echo en gnrl 
+montrer les echo sur un GET
+creer un tableau de 1 livres /
+dynamiser l'id du tableau
+ n livres
+array (size=3)
+  'id' => int 1
+  'firstname' => string 'Ross' (length=4)
+  'lastname' => string 'Geller' (length=6)
+
+Refaire le Crud
+sur une page avec les IF
+Creer l'authentification selon la meme logique
+
+
+
+
+php -S localhost:8080 -ddisplay_errors=1 -dzend_extension="c:\xampp\php\ext\php_xdebug.dll" 
+
