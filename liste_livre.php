@@ -28,10 +28,11 @@ var_dump($livres);
 var_dump($livres[0]);
 // afficher les livres avec la boucle foreach
 //s1 : http://localhost:8080/detail_livre.php?id=1&titre=le%20petit%20poucet
+// fonction php necessaire pour garder la chaine malgres les espaces
 //s2 : session
 
 foreach($livres as $monlivre){ 
-     echo "<a href=detail_livre.php?id=".$monlivre['id'].">Livre ".$monlivre['titre']."</a>
+     echo "<a href=detail_livre.php?id=".$monlivre['id']."&titre=".$monlivre['titre'].">Livre ".$monlivre['titre']."</a>
     - <a href=supprimer_livre.php?id=".$monlivre['id'].">Supprimer un livre</a>
     - <a href=modifier_livre.php?id=".$monlivre['id'].">modifier un livre</a><hr>
     ";

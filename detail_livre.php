@@ -16,3 +16,6 @@ var_dump($_SESSION['livres']);
 // les indices du tableau d'origine
 $num=$_GET['id']-1;
 var_dump($_SESSION['livres'][$num]);
+
+echo "<hr>";
+echo $_GET['titre'];
