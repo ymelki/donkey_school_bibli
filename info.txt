@@ -15,7 +15,10 @@ array (size=3)
   'id' => int 1
   'firstname' => string 'Ross' (length=4)
   'lastname' => string 'Geller' (length=6)
-
+  Liste des livres => detail
+  grace a plusieurs variables en ID/
+  grace à la session
+creer le tableau avec une boucle
 Refaire le Crud
 sur une page avec les IF
 Creer l'authentification selon la meme logique
@@ -25,3 +28,25 @@ Creer l'authentification selon la meme logique
 
 php -S localhost:8080 -ddisplay_errors=1 -dzend_extension="c:\xampp\php\ext\php_xdebug.dll" 
 
+n livres
+array (size=4)
+  0 => 
+    array (size=3)
+      'id' => int 1
+      'firstname' => string 'Ross' (length=4)
+      'lastname' => string 'Geller' (length=6)
+  1 => 
+    array (size=3)
+      'id' => int 2
+      'firstname' => string 'Monica' (length=6)
+      'lastname' => string 'Geller' (length=6)
+  2 => 
+    array (size=3)
+      'id' => int 3
+      'firstname' => string 'Phoebe' (length=6)
+      'lastname' => string 'Buffay' (length=6)
+  3 => 
+    array (size=3)
+      'id' => int 4
+      'firstname' => string 'Joey' (length=4)
+      'lastname' => string 'Tribbiani' (length=9)

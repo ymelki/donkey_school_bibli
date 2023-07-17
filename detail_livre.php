@@ -1,27 +1,18 @@
 <?php include "header.php";
-// 1. création du livre sous forme de tableau
+
 $livre1=[
-    "id" => 1,
+    "id" => $_GET['id'],
      "titre" => "le petit poucet"
     ];
 
-// 2. afficher les informations de ce livre issue du tableau
-// $livre1["id"] = >1
-?>
+// affiche "vous avez cliquez sur le livre n 1."
+echo "Vous avez cliquez sur le livre n°".$livre1['id'];
 
-<h1>Detail du livre n° <?=$livre1['id']?></h1>
-<?php 
-var_dump($_GET) ?>
-<hr>
-Titre du livre : 
-<?=$livre1['titre']?>
-<?php echo $livre1['titre']; ?>
-<?php
-// creation d'un livre 1 simulé
+echo "<hr>titre : ".$livre1['titre'];
 
-var_dump($livre1);
-
-
-?>
-
-<?php include "footer.php"; ?>
+// ex sur les sessions
+var_dump($_SESSION['livres']);
+// $num recupere l'identifiant de l'URL -1 pour etre coherent avec
+// les indices du tableau d'origine
+$num=$_GET['id']-1;
+var_dump($_SESSION['livres'][$num]);
