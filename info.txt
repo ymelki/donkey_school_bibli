@@ -51,6 +51,17 @@ Si oui on verifie le mdp
 Si oui on cree la session si non erreur
 creer la deconnexion
 
+recuperer les données de la B.D. livre
+recuperer les données de la B.D. auteur
+recuperer les données de la B.D. user, categorie, edition, bibliotheque
+creer une fonction prenant en parametre la requete
+gerer l'erreur could not find driver
+
+detail
+filtre sur l'id
+export de la table
+on rajoute ; truncate table livre;
+
 
 php -S localhost:8080 -ddisplay_errors=1 -dzend_extension="c:\xampp\php\ext\php_xdebug.dll" 
 

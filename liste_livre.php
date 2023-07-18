@@ -24,7 +24,7 @@ var_dump($livres[0]);
 //s2 : session
 
 foreach($livres as $monlivre){ 
-     echo "<a href=detail_livre.php?id=".$monlivre['id']."&titre=".$monlivre['titre'].">Livre ".$monlivre['titre']."</a>
+     echo "<a href=detail_livre.php?id=".$monlivre['id'].">Livre ".$monlivre['titre']."</a>
     - <a href=supprimer_livre.php?id=".$monlivre['id'].">Supprimer un livre</a>
     - <a href=modifier_livre.php?id=".$monlivre['id'].">modifier un livre</a><hr>
     ";

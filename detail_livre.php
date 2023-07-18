@@ -1,21 +1,35 @@
 <?php include "header.php";
 
-$livre1=[
-    "id" => $_GET['id'],
-     "titre" => "le petit poucet"
-    ];
+// recuperation de l'identifiant dans l'url 
+$id=$_GET['id'];
+// $query="SELECT * FROM livre WHERE id=$id";
+
+$query="SELECT * FROM livre WHERE id=:monidprotege";
+
+// on va preparer la requete
+$statement = $pdo->prepare($query);
+$statement->bindValue(':monidprotege', $id, \PDO::PARAM_INT);
+
+// On utilise statement qui a une méthode (sa propre fonction) permettant
+// de récupérer les données. On utilise le parametre PDO::FETCH_ASSOC
+// qui nous permet d'avoir un format de donnée sous forme de tableau
+// associatif
+$statement->execute();
+$unlivre = $statement->fetch(PDO::FETCH_ASSOC);
+var_dump($unlivre);
+
+/*
+ $statement = $pdo->prepare($query);
+$statement->bindValue(':firstname', $firstname, \PDO::PARAM_STR);
+$statement->bindValue(':lastname', $lastname, \PDO::PARAM_STR);
+$statement->execute();
+$friends = $statement->fetchAll();
+ */
+
 
 // affiche "vous avez cliquez sur le livre n 1."
-echo "Vous avez cliquez sur le livre n°".$livre1['id'];
+echo "Vous avez cliquez sur le livre n°".$unlivre['id'];
 
-echo "<hr>titre : ".$livre1['titre'];
-
-// ex sur les sessions
-var_dump($_SESSION['livres']);
-// $num recupere l'identifiant de l'URL -1 pour etre coherent avec
-// les indices du tableau d'origine
-$num=$_GET['id']-1;
-var_dump($_SESSION['livres'][$num]);
-
-echo "<hr>";
-echo $_GET['titre'];
+echo "<hr>titre : ".$unlivre['titre'];
+  
+ 
