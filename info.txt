@@ -37,9 +37,19 @@ revoir les tab avant
 comprendre pourquoi l'id on le recupere
 )
 4. authentification qui verifie
+On a une session de users
 1 page :formulaire (pseudo et mdp)
-2 page : verifie si le pseudo et mdp est bien dans le tableau de user
-
+//recuperer le $_POST['pseudo'] du form
+//verifier dans la session si le $_POST['pseudo'] est present dans la session
+//$_POST['pseudo'] il faut le comparer 
+// 1 solution on boucle sur le tableau de user
+// et a chaque tour je check $_POST['pseudo']==$monuser['pseudo']
+// 2 solution 
+2 page : verifie si le pseudo et mdp est bien 
+dans le tableau de user (session)
+Si oui on verifie le mdp
+Si oui on cree la session si non erreur
+creer la deconnexion
 
 
 php -S localhost:8080 -ddisplay_errors=1 -dzend_extension="c:\xampp\php\ext\php_xdebug.dll" 

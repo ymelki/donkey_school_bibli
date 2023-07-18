@@ -10,5 +10,5 @@ echo "Vous avez cliquez sur le user n°".$_GET['id']. "avec le pseudo ".$_GET['t
 $id=$_GET['id']-1;
 // on recupere les données de la session
 // en precisant l'ID
-$monuser=$_SESSION['toto'][$id];
+$monuser=$_SESSION['user'][$id];
 echo "Vous avez cliquez sur le user n°".$_GET['id']. "avec le pseudo ".$monuser['pseudo']  ;

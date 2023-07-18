@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <a href="authentification.php">authentification</a>
     <a href="liste_user.php">Liste des users</a>
     <a href="liste_livre.php">Liste des livres</a>
     <a href="creation_user.php">création d'un user</a>

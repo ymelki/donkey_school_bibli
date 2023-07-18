@@ -21,9 +21,14 @@ include "header.php"; ?>
             "pseudo" => "yoel3",
             "mdp" => "123456"
         ],
+        3 => [
+            "id"=>4,
+            "pseudo" => "toto",
+            "mdp" => "123456"
+        ]
     ];
 var_dump($users);
-$_SESSION['toto']=$users;
+$_SESSION['user']=$users;
   
 foreach($users as $monuser){ 
     echo "
