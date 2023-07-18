@@ -24,6 +24,18 @@ sur une page avec les IF
 Creer l'authentification selon la meme logique
 
 
+1. creation_user.php (POST)
+enregistrer_user.php
+
+2. Liste des user (creer un tableau de user)
+Detail d'un user (GET)
+Detail (Session) 
+
+3. Session (les users)
+
+4. authentification qui verifie
+ si le pseudo et mdp est bien dans le tableau de user
+
 
 
 php -S localhost:8080 -ddisplay_errors=1 -dzend_extension="c:\xampp\php\ext\php_xdebug.dll" 

@@ -7,7 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+    <a href="liste_user.php">Liste des users</a>
     <a href="liste_livre.php">Liste des livres</a>
+    <a href="creation_user.php">création d'un user</a>
     <a href="creation_livre.php">création d'un livre</a>
     <a href="creation_auteur.php">création d'un auteur</a>
     <a href="creation_edition.php">création d'une édition</a>
