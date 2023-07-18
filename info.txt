@@ -32,9 +32,13 @@ Detail d'un user (GET)
 Detail (Session) 
 
 3. Session (les users)
-
+(questions sur les clés de la session ou des post
+revoir les tab avant
+comprendre pourquoi l'id on le recupere
+)
 4. authentification qui verifie
- si le pseudo et mdp est bien dans le tableau de user
+1 page :formulaire (pseudo et mdp)
+2 page : verifie si le pseudo et mdp est bien dans le tableau de user
 
 
 

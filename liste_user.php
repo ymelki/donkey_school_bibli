@@ -23,8 +23,8 @@ include "header.php"; ?>
         ],
     ];
 var_dump($users);
-$_SESSION['users']=$users;
- 
+$_SESSION['toto']=$users;
+  
 foreach($users as $monuser){ 
     echo "
     <a href=detail_user.php?id=".$monuser['id'].">user :  ".$monuser['pseudo']."</a>
