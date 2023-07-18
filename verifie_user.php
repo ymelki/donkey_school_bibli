@@ -6,6 +6,7 @@ var_dump($_POST);
  // recuperation de la session
 $users=$_SESSION['user'];
 
+// on est deconnecte . on verifie le user
 // var_dump($users);
 foreach($users as $monuser){  
     if ($monuser['pseudo']== $_POST['pseudo_user']  ){
@@ -18,7 +19,8 @@ if (empty($user_sucess)){
 }
 else {
     var_dump($user_sucess);
-
+ 
+    // si user OK on verifie le MDP
     if (($user_sucess['mdp'])==($_POST['mdp_user'])) {
         echo "bravo!";
     }

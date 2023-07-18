@@ -1,28 +1,20 @@
 <?php
-include "header.php"; ?>
+include "header.php"; 
 
-<?php
- var_dump($_SESSION);
-    
-    //1. liste des livres
-    $livres=[
-        0 => [
-            "id" => 1,
-            "titre" => "le petit poucet"
-        ],
-        1 => [
-            "id" => 2,
-            "titre" => "le grand poucet"
-        ],
-        2 => [
-            "id" => 3,
-            "titre" => "le moyen poucet"
-        ],
-    ];
+// 1. query est une variable contenant la requete SQL permettant
+// de recuperer l'ensemble des livres
+$query = "SELECT * FROM livre";
+// L'instance PDO (objet) utilise une méthode (fonction spécifique à cet objet)
+// permettant d'éxecuter la requête.
+// on stocke le resultat dans la variable statement
+$statement = $pdo->query($query);
+// On utilise statement qui a une méthode (sa propre fonction) permettant
+// de récupérer les données. On utilise le parametre PDO::FETCH_ASSOC
+// qui nous permet d'avoir un format de donnée sous forme de tableau
+// associatif
+$livres = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-$_SESSION["livres"]=$livres;
-
-
+  
 echo $livres[0]['id'];
 var_dump($livres);
 var_dump($livres[0]);
