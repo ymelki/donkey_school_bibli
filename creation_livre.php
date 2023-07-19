@@ -7,7 +7,7 @@ include "header.php"
         <br> 
         Titre
         <br>
-        <input type="text" id="titre" name="nom_livre" required minlength="4" maxlength="8" size="10">
+        <input type="text" id="titre" name="nom_livre" required minlength="4"  size="10">
         <br>
         Nombre de page
         <br>
