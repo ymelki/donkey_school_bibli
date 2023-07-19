@@ -69,6 +69,7 @@ la base de donnée
 l'authentification
 les jointures
 les fonctions
+image
 
 
 php -S localhost:8080 -ddisplay_errors=1 -dzend_extension="c:\xampp\php\ext\php_xdebug.dll" 
