@@ -74,9 +74,11 @@ les fonctions:
 Lister les livres / users
 fonction qui me renvoie un tableau de donnéesissue d'une table
 entre (parametre) et sortie
-getTable(utilisateur):array
-getTableDetail(utilisateur,param_id):array
-removeTableDetail(utilisateur,param_id):boolean
+ - getTable(utilisateur):array
+ - getTableDetail(utilisateur,param_id):array
+ - removeTableDetail(utilisateur,param_id):boolean
+ - affichage des données des livres (tableau)
+ - insertion des données
 les jointures
 image
 
