@@ -79,6 +79,8 @@ entre (parametre) et sortie
  - removeTableDetail(utilisateur,param_id):boolean
  - affichage des données des livres (tableau)
  - insertion des données
+ - Algo (sortie et entrée)
+ 
 les jointures
 image
 
