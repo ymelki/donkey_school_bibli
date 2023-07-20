@@ -1,5 +1,25 @@
 <?php
 
+function getLivreCategorie(int $id_categorie):array{
+    $pdo= connexion();
+    // 1. query est une variable contenant la requete SQL permettant
+    // de recuperer l'ensemble des livres
+    $query = "SELECT * FROM livre where categorie_id=:monidprotege
+    
+    
+    ";
+    $statement = $pdo->prepare($query);
+    $statement->bindValue(':monidprotege', $id_categorie, \PDO::PARAM_INT);
+    
+    // On utilise statement qui a une méthode (sa propre fonction) permettant
+    // de récupérer les données. On utilise le parametre PDO::FETCH_ASSOC
+    // qui nous permet d'avoir un format de donnée sous forme de tableau
+    // associatif
+    $statement->execute();
+    $tab_entite = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+    return $tab_entite;
+}
 
 function getTable( string  $matable) : array {
     $pdo= connexion();

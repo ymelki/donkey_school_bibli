@@ -77,10 +77,16 @@ entre (parametre) et sortie
  - getTable(utilisateur):array
  - getTableDetail(utilisateur,param_id):array
  - removeTableDetail(utilisateur,param_id):boolean
- - affichage des données des livres (tableau)
- - insertion des données
+ - insertionTable
  - Algo (sortie et entrée)
- 
+ les jointures
+ - Fonction pour l'anthentification
+   - verfier si le user et present dans la B.D.
+   - verfier le mdp
+ SESSION est connecté
+ Page de catégorie => livre assosié à cette catégorie
+ Empreinter un livre
+
 les jointures
 image
 
