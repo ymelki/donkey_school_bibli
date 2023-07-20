@@ -5,7 +5,7 @@ include "header.php";
 // recuperation de l'identifiant dans l'url 
 $titre=$_POST['nom_livre'];
 // $query="SELECT * FROM livre WHERE id=$id";
-
+echo htmlentities($titre);
 $query="INSERT INTO livre (titre) VALUES (:titre)";
 
 // on va preparer la requete

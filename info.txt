@@ -67,8 +67,17 @@ la suppresion (gestion des if ou location)
 la modification
 la base de donnée
 l'authentification
+crypter mot de passe 
+htmlentities
+validation donnée age , ... , regex
+les fonctions:
+Lister les livres / users
+fonction qui me renvoie un tableau de donnéesissue d'une table
+entre (parametre) et sortie
+getTable(utilisateur):array
+getTableDetail(utilisateur,param_id):array
+removeTableDetail(utilisateur,param_id):boolean
 les jointures
-les fonctions
 image
 
 

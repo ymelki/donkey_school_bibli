@@ -3,7 +3,8 @@
 var_dump($_POST);
 $pseudo=$_POST['pseudo_user'];
 $mdp=$_POST['mdp_user'];
-//recuperer la liste des users issue de la B.D.
+//recuperer la liste des users issue de la B.D. pour le pseudo
+// saisi
 $query = "SELECT * FROM utilisateur where pseudo = :lepseudo ";
 // L'instance PDO (objet) utilise une méthode (fonction spécifique à cet objet)
 // permettant d'éxecuter la requête.
@@ -23,7 +24,7 @@ var_dump($users);
 
 
 if (empty($users)){
-    echo "identifiant inconnu ".$pseudo. " calme toi !";
+    echo "identifiant inconnu dans la B.D. ".$pseudo. " calme toi !";
 }
 else {
     if ($users['mdp']==$mdp){
