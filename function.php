@@ -42,5 +42,9 @@ function add3($a,$b){
 }
 
 function add4(int $a, int $b):int{
-    return $a+$b;
+    return 
+    $a+$b;
+}
+function test () : array{
+    return ['E'];
 }

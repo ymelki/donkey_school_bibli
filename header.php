@@ -1,6 +1,6 @@
 <?php session_start(); 
 include 'db_connect.php'; 
-$pdo=connexion();
+ 
 ?>
 <!DOCTYPE html>
 <html lang="en">

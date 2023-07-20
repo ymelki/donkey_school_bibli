@@ -1,34 +1,14 @@
 <?php
-include "header.php"; ?>
+include "header.php";
+include "fonction.php"; 
 
+?>
+<br >
 <?php
  // var_dump($_SESSION);
-    
-    //1. liste des livres
-    $users=[
-        0 => [
-            "id"=>1,
-            "pseudo" => "yoel1",
-            "mdp" => "123456"
-        ],
-        1 => [
-            "id"=>2,
-            "pseudo" => "yoel2",
-            "mdp" => "123456"
-        ],
-        2 => [
-            "id"=>3,
-            "pseudo" => "yoel3",
-            "mdp" => "123456"
-        ],
-        3 => [
-            "id"=>4,
-            "pseudo" => "toto",
-            "mdp" => "123456"
-        ]
-    ];
-var_dump($users);
-$_SESSION['user']=$users;
+  
+$users=getTable("utilisateur");
+
   
 foreach($users as $monuser){ 
     echo "
